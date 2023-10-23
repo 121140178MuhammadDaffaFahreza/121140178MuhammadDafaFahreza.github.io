@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: gray;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header .title {
+    font-size: 24px;
+}
+.header .title a{
+    color: #fff;
+    text-decoration: none;
+}
+.header .title a:hover{
+    background-color: #4aaaea;
+    border-radius: 5px;
+}
+.header .logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.sidebar {
+    background-color: gray;
+    color: #fff;
+    width: 20%;
+    float: left;
+    padding: 20px;
+}
+
+.sidebar .navbar {
+    list-style: none;
+}
+
+.sidebar .menu {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.sidebar .menu:hover {
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+.konten {
+    width: 75%;
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.konten p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.body {
+    flex-grow: 1;
+    display: flex;
+}
+
+.footer {
+    margin-top: auto;
+    background-color: gray;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.logo-container {
+    position: relative;
+
+}
+
+.shining-logo {
+    width: 100px;
+    width: 120px;
+    height: 120px;
+    border-radius: 90px;
+    height: auto;
+    animation: shine 5s infinite alternate;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+table th {
+    background-color: cadetblue;
+    color: white;
+    }
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: antiquewhite
+}
+
+tr:nth-child(odd) {
+    background-color:bisque;
+}
+
+footer{
+    text-align: center;
+    background-color: gray;
+    color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@keyframes shine {
+    0% {
+        filter: brightness(1);
+    }
+    100% {
+        filter: brightness(1.5);
+    }
+}
